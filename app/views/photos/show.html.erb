@@ -1,9 +1,7 @@
-
 <h1>My cute puppy collection</h1>
 
 <% @photo.each do | photo | %>
-    
+    <p> <%= photo.title %> </p>
     <%= image_tag photo.image %>
-<% end %>
-
-<%= link_to 'Add New Photo', new_photo_path %>
+    <p> <%= photo.description %> </p>
+<% end%>

@@ -1,0 +1,10 @@
+<h1> Upload a Photo!</h1>
+
+<%= form_for @photo do |f|%>
+<%= f.file_field :image %>
+<%= f.text_field :title, placeholder: "Enter A Title" %>
+<%= f.text_field :description, placeholder: "Describe your photo" %>
+
+<%= f.button :submit %>
+
+<% end %>
